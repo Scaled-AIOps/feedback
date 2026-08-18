@@ -4,6 +4,7 @@ Issue tracker for feedback submitted through the **Feedback** widget on [scaleda
 
 - Issues here are filed automatically by [`ffrs-api`](https://github.com/Scaled-AIOps/ffrs-api); each carries a reference like `FB-7K3M2Q` and labels `kind:*` / `severity:*`.
 - **Commenting** marks the item as responded; **closing** records the outcome and emails the submitter (if they opted in). Add an `outcome:*` label before closing to override the inferred outcome.
+- **The FFRS agent** (GitHub Actions, every 30 min) gives every new item a first response: a pull request on scaledaiops.org (`agent:pr`) or a proposal (`agent:proposal`). Requester replies `/accept`; a maintainer replies `/confirm` to execute or `/reject <reason>`. Merging the PR closes the item.
 - Monday issues labelled `ffrs-report` are the automated weekly metrics.
 
 Want to send feedback? Use the widget on the site or open an issue here directly.
